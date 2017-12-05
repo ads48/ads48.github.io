@@ -314,12 +314,12 @@ var abp;
   <aside aria-label="Действия">
    <div id="page_actions" class="page_actions" style="">
     <div class="group_send_msg">
-  <a href="/im?sel=-59538785" onclick="return checkEvent(event) ? true : showWriteMessageBox(event, -59538785)">
+  <a href="https://vk.com/im?sel=-59538785" onclick="return checkEvent(event) ? true : showWriteMessageBox(event, -59538785)">
     <button class="flat_button button_wide _group_send_msg _groups_messages_btn_tt" onclick="showWriteMessageBox(event, -59538785)">Написать сообщение</button>
   </a>
 </div><div class="page_actions_wide clear_fix">
   <div class="page_action_left fl_l">
-    <div id="page_actions_btn" class="flat_button button_wide secondary page_actions_btn" onmouseover="Page.actionsPreloadFeedLists(this)" onclick="Page.actionsDropdown(ge('page_actions_wrap'), Page.actionsPreloadFeedLists.pbind(this, 1));" tabindex="0" role="button"><span class="page_actions_dd_label">Подписаться</span></div>
+    <button id="public_subscribe" class="flat_button button_wide" onclick="Public.subscribe(this);">Подписаться</button>
   </div>
   <div class="page_actions_cont narrow fl_r">
   <div class="flat_button secondary page_actions_btn page_extra_actions_btn" onclick="Page.actionsDropdown(domNS(this))" tabindex="0" role="button" aria-label="Действия">
